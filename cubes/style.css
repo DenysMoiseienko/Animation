@@ -1,0 +1,13 @@
+@import url(figure.css);
+
+body {
+    position: relative;
+    background: white;
+}
+
+.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+  

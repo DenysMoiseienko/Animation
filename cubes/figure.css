@@ -1,0 +1,121 @@
+.cube {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .scene {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* rotation axis tilt */
+    -webkit-transform: rotateY(45deg) rotateX(45deg);
+            transform: rotateY(45deg) rotateX(45deg);
+  }
+  
+  .scene * {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  
+  .scene .bar {
+    -webkit-animation: cam 10s linear infinite;
+            animation: cam 10s linear infinite;
+  }
+
+  .side {
+    position: absolute;
+    width: 6em;
+    height:6em;
+    border: 1px solid black;
+  }
+  .front {
+    -webkit-transform: translateZ(3em);
+            transform: translateZ(3em);
+  }
+  .top {
+    -webkit-transform: rotateX(90deg) translateZ(3em);
+            transform: rotateX(90deg) translateZ(3em);
+  }
+  .right {
+    -webkit-transform: rotateY(90deg) translateZ(3em);
+            transform: rotateY(90deg) translateZ(3em);
+  }
+  .left {
+    -webkit-transform: rotateY(-90deg) translateZ(3em);
+            transform: rotateY(-90deg) translateZ(3em);
+  }
+  .bottom {
+    -webkit-transform: rotateX(-90deg) translateZ(3em);
+            transform: rotateX(-90deg) translateZ(3em);
+  }
+  .back {
+    -webkit-transform: rotateY(-180deg) translateZ(3em);
+            transform: rotateY(-180deg) translateZ(3em);
+  }
+
+  .figure[data-item="0"] {
+    -webkit-animation: movZ 10s linear infinite;
+    animation: movZ 10 linear infinite;
+  }
+
+  .figure[data-item="1"] {
+    -webkit-animation: movZ 10s linear infinite;
+    animation: movZ 10 linear infinite;
+    animation-delay: 1s;
+    opacity: 0.8;
+  }
+
+  .figure[data-item="2"] {
+    -webkit-animation: movZ 10s linear infinite;
+    animation: movZ 10 linear infinite;
+    animation-delay: 2s;
+    opacity: 0.6;
+  }
+
+  .figure[data-item="3"] {
+    -webkit-animation: movZ 10s linear infinite;
+    animation: movZ 10 linear infinite;
+    animation-delay: 3s;
+    opacity: 0.4;
+  }
+
+  .figure[data-item="4"] {
+    -webkit-animation: movZ 10s linear infinite;
+    animation: movZ 10 linear infinite;
+    animation-delay: 4s;
+    opacity: 0.2;
+  }
+
+  /* moveZ */
+@-webkit-keyframes movZ {
+    50%,50% {
+      -webkit-transform: rotateZ(360deg);
+              transform: rotateZ(360deg);
+    }
+  }
+  
+  @keyframes movZ {
+    50%,50% {
+      -webkit-transform: rotateZ(360deg);
+              transform: rotateZ(360deg);
+    }
+  }
+
+  /* move */
+  @-webkit-keyframes cam {
+    100% {
+      -webkit-transform: rotateX(360deg);
+              transform: rotateX(360deg);
+    }
+  }
+  
+  @keyframes cam {
+    100% {
+      -webkit-transform: rotateX(360deg);
+              transform: rotateX(360deg);
+    }
+  }

@@ -1,0 +1,189 @@
+.second {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+  }
+
+.t {
+    position: relative;
+    height: 100vh;
+    left: 0%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);    
+}
+
+.square {
+    position: absolute;
+    display: block;
+    border: 3px solid black;
+    height: 200px;
+    width: 200px;
+    left: 40%;
+} 
+
+/* move */
+@-webkit-keyframes test {
+    100% {
+      -webkit-transform: rotateZ(360deg);
+              transform: rotateZ(360deg);
+    }
+  }
+  
+  @keyframes test {
+    100% {
+      -webkit-transform: rotateZ(360deg);
+              transform: rotateZ(360deg);
+    }
+  }
+
+.square[data-i="0"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10 linear infinite;
+    top: 100%;
+}
+
+.square[data-i="1"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 0.1s;
+    top: 95%;
+}
+
+.square[data-i="2"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 0.2s;
+    top: 90%;
+}
+
+.square[data-i="3"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 0.3s;
+    top: 85%;
+}
+
+.square[data-i="4"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 0.4s;
+    top: 80%;
+}
+
+.square[data-i="5"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 0.5s;
+    top: 75%;
+}
+
+.square[data-i="6"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 0.6s;
+    top: 70%;
+}
+
+.square[data-i="7"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 0.7s;
+    top: 65%;
+}
+
+.square[data-i="8"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 0.8s;
+    top: 60%;
+}
+
+.square[data-i="9"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 0.9s;
+    top: 55%;
+}
+
+.square[data-i="10"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10 linear infinite;
+    animation-delay: 1s;
+    top: 50%;
+}
+
+.square[data-i="11"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 1.1s;
+    top: 45%;
+}
+
+.square[data-i="12"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 1.2s;
+    top: 40%;
+}
+
+.square[data-i="13"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 1.3s;
+    top: 35%;
+}
+
+.square[data-i="14"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 1.4s;
+    top: 30%;
+}
+
+.square[data-i="15"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 1.5s;
+    top: 25%;
+}
+
+.square[data-i="16"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 1.6s;
+    top: 20%;
+}
+
+.square[data-i="17"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 1.7s;
+    top: 15%;
+}
+
+.square[data-i="18"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 1.8s;
+    top: 10%;
+}
+
+.square[data-i="19"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 1.9s;
+    top: 5%;
+}
+
+.square[data-i="20"] {
+    -webkit-animation: test 10s linear infinite;
+    animation: test 10s linear infinite;
+    animation-delay: 2s;
+}
+
+
